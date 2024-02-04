@@ -1,0 +1,19 @@
+import numpy as np;
+a=[1,2,3,4,5];
+b=[3,4,5,6,7,8,9,10];
+y=[]; z=[];
+for i in range(0, len(a)):
+    y.append(b[i]);
+    y.append(a[i]);
+    z.append(y);
+    y=[];
+m=len(a);
+k=len(b);
+n=len(b);
+for j in range(m, k):
+    y.append(b[j]);
+    y.append(b[n-1]);
+    z.append(y);
+    y=[];
+    n=n-1;
+print(z);
